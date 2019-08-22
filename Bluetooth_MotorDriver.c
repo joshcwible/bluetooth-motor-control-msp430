@@ -10,7 +10,7 @@
 #include "Bluetooth_MotorDriver.h"
 
 void btmd_init(void) {
-	btmd_UART_INIT;
+	btmd_UART_INIT();
 
 	// setup all pins
 	MOTORDIR |= MOTOR1PIN + MOTOR2PIN; // set outputs
